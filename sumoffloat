@@ -6,6 +6,6 @@ int main()
     scanf("%f",a);
     printf("Enter the 2nd integer: ");
     scanf("%f",b);
-    printf("The sum of the two float values is %f",a,b);
+    printf("The sum of the two float values is %f",a+b);
     return 0;
 }
