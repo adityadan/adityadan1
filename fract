@@ -1,0 +1,33 @@
+#include <stdio.h>
+float arr[50];
+void input(int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+        float j,k;
+        printf("Fraction sno. %d\n",i);
+        printf("Enter numerator: ");
+        scanf("%f",&j);
+        printf("Enter denominator: ");
+        scanf("%f",&k);
+        arr[i]=j/k;
+    }
+}
+void add(int n)
+{
+    float sum=0;int i;
+    for(i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+    }
+    printf("Sum is %f", sum);
+}
+void main()
+{
+    int l;
+    printf("Enter number of fractions you want to enter: ");
+    scanf("%d",&l);
+    input(l);
+    sum(l);
+}
